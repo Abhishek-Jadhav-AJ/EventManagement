@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Student Registration</h1>
+      <form action="/sign_up" method="POST">
+        <label>Name :</label>
+        <input type="text" id= "name" name="name" onkeyup = "validateName()" />
+        <span id="name-error"></span>
+
+        <label>Email :</label>
+        <input type="email" id= "email" name="email" onkeyup="validateEmail()"/>
+        <span id="email-error"></span>
+
+        <label>Contact No :</label>
+        <input type="number" id="contact" name="contact" onkeyup="validateContact()"/>
+        <span id="number-error"></span>
+
+        <label>DOB : </label>
+        <input type="date" id="date" name="date"/>
+        
+        <label>Department :</label>
+        <input type="text" id="department" name="department" onkeyup="validateDept()"/>
+        <span id="dept-error"></span>
+
+        <label>Password :</label>
+        <input type="password" id="password" name="password" onkeyup="validatePass()"/>
+        <span id="pass-error"></span>
+
+        <label>Confirm Password :</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" onkeyup="validateConfirm()"/>
+        <span id="confirmpass-error"></span>
+
+        <button id = "submit" value = "Register" onclick="return validateForm()">Submit</button>
+        <span id="submit-error"></span>
+        
+      </form>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+      <b style= "margin: 20px;">Back to Home<a href="home.html" style="color:aqua ;">  Click ME</a></b>
+    </p>
+    
+    
+    
+
+    <script src = "registervalidate.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body >
+    <div class="login-box">
+      <h1>Login</h1>
+      <form  action="Event.html" >
+        <label>Email :</label>
+        <input type="email" id="email" name="email" onkeyup="validateEmail()" />
+        <span id="emailError"></span>
+
+        <label>Password :</label>
+        <input type="password" id="password" name="password" onkeyup="validatePass()" />
+        <span id="passError"></span>
+
+        <button id = "submit" value = "Register" onclick="return validateForm()">Login</button>
+        <span id="submitError"></span>
+      </form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="register.html">Sign Up Here</a>
+    </p>
+    <p class="para-2">
+      Back to Home <a href="home.html">Click Here</a>
+    </p>
+
+    <script src="loginvalidate.js"></script>
+  </body>
+  
+</html>
+

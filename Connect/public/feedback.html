@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Student Feedback</h1>
+      <form action="/studentfeedback" method="POST">
+        <label>Name :</label>
+        <input type="text" id= "name" name="name" onkeyup = "validateName()" />
+        <span id="nameError"></span>
+
+        <label>Email :</label>
+        <input type="email" id= "email" name="email" onkeyup="validateEmail()"/>
+        <span id="emailError"></span>
+
+        <label>Feedback :</label>
+        <textarea name="feedback" id="feedback" onkeyup="validateText()"></textarea>
+        <span id="textError"></span>
+        
+        <button id = "submit" onclick="return validateForm()">Submit</button>
+        <span id="submiterror"></span>
+        
+      </form>
+    </div>
+
+    <p class="para-2">
+        Back to Home <a href="home.html">Click Here</a>
+      </p>
+
+
+    <script src = "feedback.js"></script>
+    
+  </body>
+</html>

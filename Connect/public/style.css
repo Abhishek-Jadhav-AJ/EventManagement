@@ -1,0 +1,138 @@
+body{
+    font-size: 18px;
+    background: rgb(34,31,40);
+    background: linear-gradient(134deg, rgba(34,31,40,1) 19%, rgba(104,58,196,1) 87%);
+    font: 500 1rem 'Montserrat', sans-serif;
+  }
+  
+.signup-box {
+    width: 380px;
+    height: 660px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .login-box span{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Montserrat', serif;
+    color: red;
+
+  }
+
+  .login-box span i{
+    color: rgb(34, 181, 34);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  .signup-box span{
+    position: absolute;
+    font-size: 14px;
+    font-family: 'Montserrat', serif;
+    color: red;
+  }
+
+  .signup-box span i{
+    color: rgb(34, 181, 34);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .login-box {
+    
+    box-shadow: 0 0 40px rgba(15, 13, 13, 0.2);
+    border-radius: var(--border-radius);
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #5056af;
+    color: white;
+    font-size: 18px;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .para-2 a {
+    color: white;
+  }
+
+  
+  
+  input[type=submit] {
+    align-content: center;
+    font-family: 'Montserrat', serif;
+    width: 100%;
+    background: linear-gradient(134deg, rgba(34,31,40,1) 19%, rgba(104,58,196,1) 87%);
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    margin: 20px 7px;
+    border-radius: 10px;
+}
+
+.signup-box button {
+  width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background: linear-gradient(134deg, rgba(34,31,40,1) 19%, rgba(104,58,196,1) 87%);
+    color: white;
+    font-size: 18px;
+}
+
+.login-box button{
+  width: 320px;
+  height: 45px;
+  margin-top: 40px;
+  border: none;
+  background: linear-gradient(134deg, rgba(34,31,40,1) 19%, rgba(104,58,196,1) 87%);
+  color: white;
+  font-size: 18px;
+}

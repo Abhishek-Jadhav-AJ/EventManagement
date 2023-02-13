@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Event Payment Data </h1>
+      <form action="/paymentdata1" method="POST">
+        <label>Payment ID :</label>
+        <input type="number" id= "id" name = "id" onkeyup = "validateID()" />
+        <span id="idError"></span>
+
+        <label>Payment Amount :</label>
+        <input type="number" id= "paymentAmount" name="paymentAmount" onkeyup="validateAmount()"/>
+        <span id="paymentError"></span>
+
+        <label>Payment Type :</label><br>
+        <select name="paymenttype" id="paymentType" name = "paymentType" style="font-size: 20px;">
+            <option value="Online">Online</option>
+           
+         </select>
+        <span id="textError"></span>
+        
+        <form action="http://localhost:4000/card">
+            <button id = "submit" value = "submit" onclick= "return validateForm()">Confirm</button>
+            <span id="submiterror"></span>
+            <!-- <input type="submit" value="" /> -->
+       
+        
+      </form>
+    </div>
+    <script src = "payment1.js"></script>
+    
+  </body>
+</html>

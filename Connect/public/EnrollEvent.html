@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Event Registration</h1>
+      <form action="/eventdata" method="POST">
+        <label>Participant Name :</label><br>
+        <input type="text" id= "name" name="name" onkeyup = "validateName()" />
+        <span id="nameerror"></span>
+        
+        <label>Department :</label><br>
+        <input type="text" id="department" name="department" onkeyup="validateDept()"/>
+        <span id="depterror"></span>
+
+        <label>Event Name :</label><br>
+        <input type="text" id="eventname" name = "eventname" onkeyup="validateEvent()" />
+        <span id="eventerror"></span>
+
+        <br>
+        <label>Payment Link: &nbsp;&nbsp;
+        <a href="/payment.html"> Click Here </a>
+        </label>
+  
+        <br>
+        <label>Payment Status :</label><br>
+        <select id="paymenttype"  style="font-size: 20px;" name="status" onkeyup="validatePayment()" >
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+         </select>
+        <span id="paymenterror"></span>
+         
+        <button id = "submit" value = "Register" onclick="return validateForm()">Confirm </button>
+        <span id="submiterror"></span>
+        
+      </form>
+    </div>
+    <!-- <p class="para-2">
+      Already Enroll? <a href="Event.html">Click here</a>
+       <b style= "margin: 20px;">Payment Link :<a href="home.html" style="color:aqua ;"> Click Here</a></b> 
+    </p> -->
+    
+    
+    
+
+    <script src = "EnrollEvent.js"></script>
+    
+  </body>
+</html>

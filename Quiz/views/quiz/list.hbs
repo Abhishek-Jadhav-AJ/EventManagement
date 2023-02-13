@@ -1,0 +1,27 @@
+<h3>TechQuiz Event Participant List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>Participant Name</th>
+            <th>Department</th>
+            <th>Event Name</th>
+            <th>Payment Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            
+            <td>{{this.fullName}}</td>
+            <td>{{this.department}}</td>
+            <td>{{this.eventName}}</td>
+            <td>{{this.status}}</td>
+            <td>
+                <a href="/quiz/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/quiz/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
